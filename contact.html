@@ -1,0 +1,346 @@
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Yasmeen | Artist & Web Developer</title>
+<link rel="stylesheet" href="/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Yasmeen</h2>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 60vh; padding: 120px 0 60px;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">
+                    Let's <span class="gradient-text">Connect</span>
+                </h1>
+                <p class="hero-description" style="font-size: 1.2rem; max-width: 700px;">
+                    Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.
+                </p>
+            </div>
+        </div>
+        <div class="bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <section style="padding: 60px 0; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p>yasmeenjenessa@gmail.com</p>
+                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">Response within 24 hours</p>
+                </div>
+
+                <div class="contact-method">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Social Media</h3>
+                    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+                        <a href="https://github.com/Yasjen7" target="_blank" class="social-link" style="width: 40px; height: 40px;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" style="width: 40px; height: 40px;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" style="width: 40px; height: 40px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" style="width: 40px; height: 40px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Send Me a Message</h2>
+                <p style="text-align: center; color: rgba(255, 255, 255, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">
+                    Fill out the form below and I'll get back to you as soon as possible. Let's discuss your project!
+                </p>
+
+                <form id="contact-form" style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user" style="margin-right: 0.5rem;"></i>Your Name *
+                            </label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">
+                            <i class="fas fa-tag" style="margin-right: 0.5rem;"></i>Subject *
+                        </label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="What's this about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type" class="form-label">
+                            <i class="fas fa-briefcase" style="margin-right: 0.5rem;"></i>Project Type
+                        </label>
+                        <select id="project-type" name="project-type" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\'><path fill=\'%23fff\' d=\'m0 0 4 0 -2 5z\'/></svg>'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 12px;">
+                            <option value="">Select a project type</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="digital-art">Digital Art & Design</option>
+                            <option value="cybersecurity-education">Cybersecurity Education</option>
+                            <option value="community-project">Community Project</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget" class="form-label">
+                            <i class="fas fa-dollar-sign" style="margin-right: 0.5rem;"></i>Budget Range (Optional)
+                        </label>
+                        <select id="budget" name="budget" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\'><path fill=\'%23fff\' d=\'m0 0 4 0 -2 5z\'/></svg>'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 12px;">
+                            <option value="">Select your budget range</option>
+                            <option value="under-1000">Under $1,000</option>
+                            <option value="1000-3000">$1,000 - $3,000</option>
+                            <option value="3000-5000">$3,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000-plus">$10,000+</option>
+                            <option value="discuss">Let's discuss</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            <i class="fas fa-comment" style="margin-right: 0.5rem;"></i>Your Message *
+                        </label>
+                        <textarea id="message" name="message" class="form-control" rows="6" placeholder="Tell me about your project, goals, timeline, and any specific requirements..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline" class="form-label">
+                            <i class="fas fa-calendar" style="margin-right: 0.5rem;"></i>Project Timeline
+                        </label>
+                        <select id="timeline" name="timeline" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\'><path fill=\'%23fff\' d=\'m0 0 4 0 -2 5z\'/></svg>'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 12px;">
+                            <option value="">When do you need this completed?</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="2-3-months">2-3 months</option>
+                            <option value="3-6-months">3-6 months</option>
+                            <option value="flexible">Flexible timeline</option>
+                        </select>
+                    </div>
+
+                    <div style="margin: 2rem 0;">
+                        <label style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.8); cursor: pointer;">
+                            <input type="checkbox" name="newsletter" style="margin-right: 0.5rem; transform: scale(1.2);">
+                            <span>Subscribe to my newsletter for updates on new projects and community events</span>
+                        </label>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">
+                            <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                            Send Message
+                        </button>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 1.5rem; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+                        <p>
+                            <i class="fas fa-lock" style="margin-right: 0.3rem;"></i>
+                            Your information is secure and will never be shared with third parties.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="display: grid; gap: 2rem;">
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 2rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <h3 style="color: var(--white); margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-question-circle" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            How long does a typical project take?
+                        </h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); margin: 0; line-height: 1.6;">
+                            Project timelines vary depending on complexity. A simple website typically takes 2-4 weeks, 
+                            while more complex applications or art projects can take 6-12 weeks. I'll provide a detailed timeline during our initial consultation.
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 2rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <h3 style="color: var(--white); margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-question-circle" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            Can you help with existing websites?
+                        </h3>
+                        <p style="color: rgba(255, 255, 255, 0.8); margin: 0; line-height: 1.6;">
+                            Absolutely! I offer website redesigns, performance improvements, security updates, feature additions, 
+                            and maintenance services for existing sites. I work with various platforms and frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px);">
+        <div class="container">
+            <h2 class="section-title">Current Availability</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <div style="margin-bottom: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📅</div>
+                        <h3 style="color: var(--white); margin-bottom: 1rem;">Next Available Start Date</h3>
+                        <p style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">January 15, 2025</p>
+                        <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem;">
+                            I'm currently accepting new projects with a start date of mid-January 2025. 
+                            However, I'm happy to discuss urgent projects or smaller tasks that might fit into my schedule sooner.
+                        </p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <div style="padding: 1rem; background: rgba(76, 205, 196, 0.2); border-radius: 10px; border: 1px solid #4ecdc4;">
+                            <div style="color: #4ecdc4; font-weight: 600;">✓ Available</div>
+                            <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">New Projects</div>
+                        </div>
+                        
+                        <div style="padding: 1rem; background: rgba(255, 193, 7, 0.2); border-radius: 10px; border: 1px solid #ffc107;">
+                            <div style="color: #ffc107; font-weight: 600;">⚠ Limited</div>
+                            <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Consultations</div>
+                        </div>
+                        
+                        <div style="padding: 1rem; background: rgba(255, 107, 107, 0.2); border-radius: 10px; border: 1px solid #ff6b6b;">
+                            <div style="color: #ff6b6b; font-weight: 600;">⨯ Unavailable</div>
+                            <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Rush Projects</div>
+                        </div>
+                    </div>
+
+                    <a href="#contact-form" class="btn btn-secondary">
+                        <i class="fas fa-calendar-plus"></i> Schedule a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Yasmeen</h3>
+                    <p>Creating digital experiences that inspire positive change</p>
+                    <div style="margin-top: 1rem;">
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+                            Based in the Bronx, NY
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+                            <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+                            yasmeenjenessa@gmail.com
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="projects.html">Web Development</a></li>
+                            <li><a href="projects.html">Digital Art</a></li>
+                            <li><a href="projects.html">UI/UX Design</a></li>
+                            <li><a href="projects.html">Cybersecurity Education</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="https://github.com/Yasjen7" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yasmeen. Made with 💜 in the Bronx. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
